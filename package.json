@@ -1,0 +1,39 @@
+{
+  "name": "antigravity-yolo-mode",
+  "displayName": "Antigravity YOLO Mode",
+  "description": "Auto-Accept agent steps in Antigravity",
+  "icon": "icon.png",
+  "version": "1.5.0",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/antigravity-yolo-mode"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "yolo.toggle",
+        "title": "YOLO: Toggle Auto-Accept"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "20.2.5",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.1.3"
+  }
+}
