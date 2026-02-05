@@ -18,29 +18,23 @@
 
 ### From VSIX
 1. Download the latest `.vsix` file
-2. Open VS Code
+2. Open Antigravity
 3. Go to Extensions view (`Ctrl+Shift+X`)
 4. Click the `...` menu → `Install from VSIX...`
 5. Select the downloaded file
 
 ### From Marketplace
-Search for "Antigravity YOLO Mode" in the VS Code Extensions Marketplace.
+Search for "Antigravity YOLO Mode" in Open VSX (Antigravity's default marketplace).
 
 ## Usage
 
-### Toggle YOLO Mode
-- Open Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`)
+- Open Command Palette (`Ctrl+Shift+P`)
 - Run: `YOLO: Toggle Auto-Accept`
-
-### Status Bar
-Check the bottom-right status bar:
-- 🏎️ `YOLO: ON` - Auto-accepting enabled
-- 🛑 `YOLO: OFF` - Auto-accepting disabled
+- Check console logs for status
 
 ## Requirements
 
-- VS Code 1.80.0 or higher
-- Antigravity extension installed
+- Antigravity (based on VS Code 1.80.0+)
 
 ## Development
 
