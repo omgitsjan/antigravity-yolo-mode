@@ -26,12 +26,6 @@
 ### From Marketplace
 Search for "Antigravity YOLO Mode" in Open VSX (Antigravity's default marketplace).
 
-## Usage
-
-- Open Command Palette (`Ctrl+Shift+P`)
-- Run: `YOLO: Toggle Auto-Accept`
-- Check console logs for status
-
 ## Requirements
 
 - Antigravity (based on VS Code 1.80.0+)
