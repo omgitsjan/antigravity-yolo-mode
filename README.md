@@ -1,6 +1,6 @@
-# Antigravity YOLO Mode
+# Gemini YOLO Mode
 
-🏎️ **Auto-accept terminal commands in Antigravity**
+🏎️ **Auto-accept terminal commands in Gemini**
 
 ## What it does
 - Automatically accepts terminal/console commands every 2 seconds.

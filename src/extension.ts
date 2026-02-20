@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
 
-let yoloInterval: NodeJS.Timer | undefined;
+let yoloInterval: NodeJS.Timeout | undefined;
 let isYoloActive = false;
 const YOLO_CHECK_INTERVAL_MS = 2000;
 
@@ -41,8 +41,14 @@ function stopYoloMode() {
 
 async function safeAccept() {
     try {
-        await vscode.commands.executeCommand('antigravity.agent.acceptAgentStep');
-    } catch { }
+        // Try the new Gemini command first
+        await vscode.commands.executeCommand('gemini.agent.acceptAgentStep');
+    } catch {
+        try {
+            // Fallback to the old Antigravity command
+            await vscode.commands.executeCommand('antigravity.agent.acceptAgentStep');
+        } catch { }
+    }
 }
 
 export function deactivate() {

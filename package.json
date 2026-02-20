@@ -1,11 +1,11 @@
 {
   "name": "antigravity-yolo-mode",
-  "displayName": "Antigravity YOLO Mode",
-  "description": "Auto-accept terminal commands in Antigravity (does not auto-approve plans)",
+  "displayName": "Gemini YOLO Mode",
+  "description": "Auto-accept terminal commands in Gemini (does not auto-approve plans)",
   "version": "1.0.2",
   "publisher": "freddyjda1",
   "engines": {
-    "vscode": "^1.80.0"
+    "vscode": "^1.90.0"
   },
   "categories": [
     "Other"
@@ -34,9 +34,9 @@
     "package": "vsce package --no-yarn"
   },
   "devDependencies": {
-    "@types/node": "20.2.5",
-    "@types/vscode": "^1.80.0",
-    "typescript": "^5.1.3",
-    "@vscode/vsce": "^2.19.0"
+    "@types/node": "^20.12.7",
+    "@types/vscode": "^1.90.0",
+    "typescript": "^5.4.5",
+    "@vscode/vsce": "^2.27.0"
   }
 }
