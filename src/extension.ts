@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
 
-let yoloInterval: NodeJS.Timer | undefined;
+let yoloInterval: NodeJS.Timeout | undefined;
 let isYoloActive = false;
 const YOLO_CHECK_INTERVAL_MS = 2000;
 
@@ -40,9 +40,21 @@ function stopYoloMode() {
 }
 
 async function safeAccept() {
-    try {
-        await vscode.commands.executeCommand('antigravity.agent.acceptAgentStep');
-    } catch { }
+    const commands = [
+        'gemini.diff.accept',
+        'geminicodeassist.codelens.accept',
+        'gemini.agent.acceptAgentStep',
+        'antigravity.agent.acceptAgentStep'
+    ];
+
+    for (const cmd of commands) {
+        try {
+            await vscode.commands.executeCommand(cmd);
+            return; // Exit on the first successful command
+        } catch {
+            // Ignore error and try the next command
+        }
+    }
 }
 
 export function deactivate() {

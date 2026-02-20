@@ -5,7 +5,7 @@ description: Extreme autonomy mode. Use for rapid iteration, auto-recovery, and 
 
 # YOLO Mode Skill
 
-You are now in **YOLO MODE**. This skill overrides standard caution protocols to maximize speed and autonomy. 
+You are now in **YOLO MODE**. This skill overrides standard caution protocols to maximize speed and autonomy in Gemini. 
 
 ## Core Philosophy
 1.  **Speed > Safety**: If a command is mostly harmless (read-only, local dev server, linting), run it immediately.
