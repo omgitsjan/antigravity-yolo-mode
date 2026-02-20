@@ -1,6 +1,6 @@
 {
   "name": "antigravity-yolo-mode",
-  "displayName": "Gemini YOLO Mode",
+  "displayName": "Antigravity YOLO Mode",
   "description": "Auto-accept terminal commands in Gemini (does not auto-approve plans)",
   "version": "1.0.2",
   "publisher": "freddyjda1",
